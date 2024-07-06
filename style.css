@@ -117,15 +117,24 @@ span {
         transform: scale(100%);
     }
 }
+@keyframes moveLeft{
+    0%{
+        transform: translateX(60rem);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
 
 .head-one {
     font-size: 65px;
     font-weight: bolder;
     color: #ebf706;
+    animation: moveLeft 2s linear;
 }
 
 .head-color {
-    color: #ebf706;
+    color: #ffffff;
 }
 
 .head-two {
