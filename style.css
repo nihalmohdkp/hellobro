@@ -35,7 +35,7 @@ body {
 
 .my-name {
     font-size: 25px;
-    color:black;
+    color:#ebf706;
     transition: 0.3s ease;
 }
 
@@ -121,7 +121,7 @@ span {
 .head-one {
     font-size: 65px;
     font-weight: bolder;
-    color: white;
+    color: #ebf706;
 }
 
 .head-color {
