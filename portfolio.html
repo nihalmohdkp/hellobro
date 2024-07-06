@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio main</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="new.js"></script>   
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("yI_LbJqnIpAYatP0J");
+        })();
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="main-container">
+            <div class="navbar">
+                <a href="#home" class="my-name"><span>NIHAL</span></a>
+                <div class="navbar-items">
+                    <a href="#about">About</a>
+                    <a href="#skill">Skill</a>
+                    <a href="#project">Project</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+    </header>
+    <div id="home">
+        <div class="home-left">
+            <h1 class="head-one">Hi, It's me <br><span class="hLead-color">Nihal </span></h1>
+            <h2 class="head-two">I'm a <span class="head-color">Software Engineer
+                </span></h2>
+            <p class="home-para">Hello! I'm Nihal Muhammed , a passionate newcomer to the world of <br>software
+                with big dreams of becoming a <br>data analyst.</p>
+            <div class="social-media">
+                <a href="https://www.instagram.com/nihal_mohd_kp?igsh=MXdhYTVuamdqdHA2YQ==">
+                    <div class="icon-container"><i class='bx bxl-instagram-alt'></i></div>
+                </a>
+                <a href="https://github.com/nihalmohdkp">
+                    <div class="icon-container"><i class='bx bxl-github'></i></div>
+                </a>
+                <a href="https://www.linkedin.com/in/nihal-muhammed-kp-24959b310">
+                    <div class="icon-container"><i class='bx bxl-linkedin-square'></i></div>
+                </a>
+            </div>
+            <div class="one">
+                <a href="NIHAL MUHAMMED KP (1).pdf">my resume</a>
+            </div>
+            <a href="#contact"><button class="contact-btn">Contact</button></a>
+        </div>
+        <div class="home-right">
+            <img src="portfolio down.png" alt="my image" width="745px" height="945px">
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="about-left">
+            <img src="portfolio up.png" alt="my image" width="600px" height="800px">
+        </div>
+        <div class="about-right">
+            <h1 class="about-head">About <span class="head-color">Me</span></h1>
+            <p class="about-para">Hello! I'm Nihal Muhammed KP, a data analyst specializing in deriving actionable
+                insights from complex datasets. Armed with a background in Computer Engineering, I possess a strong
+                foundation in data analysis, statistics, and machine learning techniques. My passion lies in
+                transforming raw data into meaningful narratives that drive business decisions.<br><br>
+
+                I have honed my skills through hands-on experience and continuous learning in data visualization tools
+                such as Tableau and Power BI, as well as programming languages like Python and R for data manipulation
+                and analysis. Currently, I am applying my expertise as part of a dynamic team at Bridgeon, where I
+                collaborate on diverse projects to deliver data-driven solutions.<br><br>
+
+                Explore my portfolio to see examples of my analytical work, and feel free to connect if you're
+                interested in leveraging data for strategic insights or discussing innovative approaches to analytics
+                challenges. Let's explore how we can achieve your data-driven goals together!
+            </p>
+        </div>
+    </div>
+
+    <div id="skill">
+        <h1 class="skill-head">Skill</h1>
+        <div class="skill-container">
+            <div class="skill-sub">
+                <div class="skill-icon-head"><i class='bx bxl-html5'></i>
+                    <h2>HTML</h2>
+                </div>
+
+                <p class="skill-para">HTML, short for Hypertext Markup Language, is the standard language used to
+                    create web pages. It uses tags to structure the content and layout of a webpage. These tags
+                    define elements such as headings, paragraphs, images, links, and more. HTML is essential for
+                    building the basic structure of a website.</p>
+            </div>
+            <div class="skill-sub">
+                <div class="skill-icon-head"><i class='bx bxl-css3'></i>
+                    <h2>CSS</h2>
+                </div>
+                <p class="skill-para">CSS, or Cascading Style Sheets, styles the appearance of HTML document. It
+                    defines colors, fonts, layout, and more, enhancing webpage aesthetics and user experience. CSS
+                    separates content from presentation, allowing for consistent and responsive design across
+                    different devices and screen sizes.</p>
+            </div>
+            <div class="skill-sub">
+                <div class="skill-icon-head"><i class='bx bxl-javascript'></i>
+                    <h2>JavaScript</h2>
+                </div>
+
+                <p class="skill-para">JavaScript (JS) is a versatile programming language primarily used for adding
+                    interactivity to web pages. It enables dynamic behavior like animations, user input validation,
+                    and updating content without reloading the page. JS works alongside HTML and CSS, making web
+                    pages more interactive and responsive for users.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="project">
+        <h1 class="project-head">Project</h1>
+        <div class="project-container">
+            <div class="project-sub project-sub-one">
+                <a href="G10_PROJECT (4).pdf" target="_blank">PROJECT 0 <i class='bx bx-desktop'></i></a>
+            </div>
+            <div class="project-sub project-sub-two">
+                <a href="Mini_Project_Nihal.pdf" target="_blank">PROJECT 1 <i class='bx bx-desktop'></i></a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="contact">
+        <h1 class="contact-head">Contact <span class="head-color">Me</span></h1>
+        <div class="contact-form">
+            <input type="text" placeholder="Full Name" id="name" class="contact-input">
+            <input type="email" placeholder="Email" id="email" class="contact-input">
+            <textarea id="message"></textarea>
+            <button onclick="sendMail()" id="send">Send Message</button>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
